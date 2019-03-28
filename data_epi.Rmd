@@ -1,0 +1,63 @@
+---
+title: ""
+---
+
+<!--Add a loading bar!-->
+<script src="pace.js"></script>
+<link href="pace_loadbar_loading.css" rel="stylesheet" />
+
+<!--Create a block for title and breadcrumbs to appear on same line-->
+<div style="width: 100%; display: inline-block;">
+<div style="float: left;">
+<h1>Rabies Incidence</h1>
+</div>
+<div style="float: right;">
+<ol class="breadcrumb" style="background-color:white;">
+  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+  <li class="breadcrumb-item active">Rabies Incidence</li>
+</ol>
+</div>
+</div>
+<hr class="hr-orange">
+
+<br>
+  
+<!--Begin page content!-->
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# Set plot params
+# start_date_1 <- "2001-12-31"
+# start_month_1 <- 1
+# start_date_2 <- "2011-12-31"
+# diff_in_days = difftime(strptime(start_date_2, format = "%Y-%m-%d"), strptime(start_date_1, format = "%Y-%m-%d"), units = "days")
+# start_month_2 <- (floor(as.double(diff_in_days)/365))*12 
+# end_date <- Sys.Date()
+# 
+# # Find maximum number of bitten animals/bite victims for y-axis for each district
+# y_axis_max <- find_y_max(human_dataframe=human_epi_month, animal_dataframe=animal_epi_month, start_month=start_month_1, type="epi")
+```
+  
+### Comparison of exposures and cases  
+  
+<h5 class="text-primary"><em>Plot coming soon</em></h5>
+<br>
+  
+``` {r, echo=FALSE}
+#epi_plot(human_dataframe=human_epi_month, animal_dataframe=animal_epi_month, 
+#         district=script_district, start_date=start_date_2, start_month=start_month_2,
+#         end_date=end_date, max_y=y_axis_max_2012)
+```
+
+<hr class="hr-grey">
+  
+### Location of animal Rabies cases  
+  
+The map below shows the location of suspect animal rabies cases and healthy animal bites traced in Mara Region over the last five years. Village centroids are used for all bite incidents. Select from the dropdown menu to view data from a specific year:  
+
+```{r droplink, echo=FALSE}
+# Create table
+table_site <- c("html/mara_epi_map_2019.html", "html/mara_epi_map_2018.html")
+names(table_site) <- c("2019", "2018")
+
+bsselect(table_site, type = "iframe", frame_height=550, style="btn-primary", show_tick=TRUE, height=0)
+```

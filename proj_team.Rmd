@@ -1,0 +1,40 @@
+---
+title: ""
+---
+
+<!-----------------------------------------------------------------------------!>
+<!--Add a loading bar!-->
+<script src="pace.js"></script>
+<link href="pace_loadbar_loading.css" rel="stylesheet" />
+
+<!-----------------------------------------------------------------------------!>
+<!--Create a block for title and breadcrumbs to appear on same line-->
+<div style="width: 100%; display: inline-block;">
+<div style="float: left; ">
+# Project Team
+</div>
+<div style="float: right;">
+<ol class="breadcrumb" style="background-color:white;">
+  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+  <li class="breadcrumb-item active">Project Team</li>
+</ol>
+</div>
+</div>
+<hr class="hr-orange">
+
+<br>
+
+<!-----------------------------------------------------------------------------!>
+<!--Begin page content!-->
+
+<em><p style="text-align: center;">Listed alphabetically </p></em>
+
+<!--Kirstyn!-->
+<div class="hvrbox hvrbox_background" style="background-image: url(img/team/kirstyn_b2.jpg);">
+<div class="hvrbox-layer_top">
+<div class="hvrbox-text">
+<b>NAME</b><br><em>POSITION</em><br>
+DESCRIPTION HERE!
+</div>
+</div>
+</div>

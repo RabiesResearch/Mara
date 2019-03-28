@@ -1,0 +1,203 @@
+---
+title: ""
+---
+
+<!-- ---------------------------------------------------------------------- --!>
+<!--Add javascript section for tabbed sections!-->
+<script src="tabs.js"></script>
+<body onload="document.getElementById('defaultOpen').click();">
+
+<!-- ---------------------------------------------------------------------- --!>
+<!--Add javascript section for lightbox!-->
+<script src="lightbox.js"></script>
+
+<!-- ---------------------------------------------------------------------- --!>
+<!--Add a loading bar!-->
+<script src="pace.js"></script>
+<link href="pace_loadbar_loading.css" rel="stylesheet" />
+
+<!-- ---------------------------------------------------------------------- --!>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-- ---------------------------------------------------------------------- --!>
+<!--Create a block for title and breadcrumbs to appear on same line-->
+<div style="width: 100%; display: inline-block;">
+<div style="float: left; ">
+# Project Gallery
+</div>
+<div style="float: right;">
+<ol class="breadcrumb" style="background-color:white;">
+<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+<li class="breadcrumb-item active">Project Gallery</li>
+</ol>
+</div>
+</div>
+<hr class="hr-orange">
+
+<br>
+
+<!-- ---------------------------------------------------------------------- --!>
+<!--Begin page content!-->
+
+<!-- Tab links, with tab 1 by default -->
+<button class="tablink" onclick="openPage('Vax', this, '#DE4815')" id="defaultOpen"><i class="fa fa-syringe"></i></button>
+<button class="tablink" onclick="openPage('CT', this, '#DE4815')"><i class="fa fa-project-diagram"></i></button>
+<button class="tablink" onclick="openPage('Lab', this, '#DE4815')"><i class="fa fa-vials"></i></button>
+<button class="tablink" onclick="openPage('Train', this, '#DE4815')"><i class="fa fa-chalkboard-teacher"></i></button>
+
+<!-- ---------------------------------------------------------------------- --!>
+<!-- Tab 1 content -->
+<div id="Vax" class="tabcontent">
+<h3>Dog Vaccination</h3>
+<em>Please click on a photo to view</em>
+<h5 class="text-primary"><em>Images coming soon</em></h5>
+<br>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+<div class="column">
+<img src="img/gallery/TZimg_Vax1.jpg" onclick="openModal1();currentSlide1(1)" class="demo1 hover-shadow" alt="">
+</div>
+</div> <!-- End Gallery -->
+
+<!-- The Modal/Lightbox -->
+<div id="myModal1" class="modal">
+<div class="modal-content">
+<span class="close_modal cursor" onclick="closeModal1()">&times;</span>
+
+<!-- Images in Lightbox -->
+<div class="mySlides1">
+<div class="numbertext">1 / 9</div>
+<img src="img/gallery/TZimg_Vax1.jpg" class="modal-img-resp">
+</div>
+
+<!-- Next/previous controls -->
+<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+<!-- Caption text -->
+<div class="caption-container">
+<p id="caption1"></p>
+</div> <!-- End Caption -->
+
+</div> <!-- End Modal content -->
+</div> <!-- End Lightbox -->
+</div> <!-- End Tab 1 -->
+
+<!-- ---------------------------------------------------------------------- --!>
+<!-- Tab 2 content -->
+<div id="CT" class="tabcontent">
+<h3>Contact Tracing</h3>
+<em>Please click on a photo to view</em>
+<h5 class="text-primary"><em>Images coming soon</em></h5>
+<br>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+<div class="column">
+<img src="img/gallery/TZimg_CT7.jpg" onclick="openModal2();currentSlide2(1)" class="demo2 hover-shadow" alt="">
+</div>
+</div> <!-- End Gallery -->
+
+<!-- The Modal/Lightbox -->
+<div id="myModal2" class="modal">
+<div class="modal-content">
+<span class="close_modal cursor" onclick="closeModal2()">&times;</span>
+
+<!-- Images in Lightbox -->
+<div class="mySlides2">
+<div class="numbertext">1 / 4</div>
+<img src="img/gallery/TZimg_CT7.jpg" class="modal-img-resp">
+</div>
+
+<!-- Next/previous controls -->
+<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+<!-- Caption text -->
+<div class="caption-container">
+<p id="caption2"></p>
+</div> <!-- End Caption -->
+
+</div> <!-- End Modal content -->
+</div> <!-- End Lightbox -->
+</div> <!-- End Tab 2 -->
+
+<!-- ---------------------------------------------------------------------- --!>
+<!-- Tab 3 content -->
+<div id="Lab" class="tabcontent">
+<h3>Laboratory Analysis</h3>
+<em>Please click on a photo to view</em>
+<h5 class="text-primary"><em>Images coming soon</em></h5>
+<br>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+<div class="column">
+<img src="img/gallery/TZimg_Lab36.jpg" onclick="openModal3();currentSlide3(1)" class="demo3 hover-shadow" alt="">
+</div>
+</div> <!-- End Gallery -->
+
+<!-- The Modal/Lightbox -->
+<div id="myModal3" class="modal">
+<div class="modal-content">
+<span class="close_modal cursor" onclick="closeModal3()">&times;</span>
+
+<!-- Images in Lightbox -->
+<div class="mySlides3">
+<div class="numbertext">1 / 4</div>
+<img src="img/gallery/TZimg_Lab36.jpg" class="modal-img-resp">
+</div>
+
+<!-- Next/previous controls -->
+<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides3(1)">&#10095;</a>
+
+<!-- Caption text -->
+<div class="caption-container">
+<p id="caption3"></p>
+</div> <!-- End Caption -->
+
+</div> <!-- End Modal content -->
+</div> <!-- End Lightbox -->
+</div> <!-- End Tab 3 -->
+
+<!-- ---------------------------------------------------------------------- --!>
+<!-- Tab 4 content -->
+<div id="Train" class="tabcontent">
+<h3>Training & Conferences</h3>
+<em>Please click on a photo to view</em>
+<h5 class="text-primary"><em>Images coming soon</em></h5>
+<br>
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+<div class="column">
+<img src="img/gallery/TZimg_Training15.jpg" onclick="openModal4();currentSlide4(1)" class="demo4 hover-shadow" alt="">
+</div>
+</div> <!-- End Gallery -->
+
+<!-- The Modal/Lightbox -->
+<div id="myModal4" class="modal">
+<div class="modal-content">
+<span class="close_modal cursor" onclick="closeModal4()">&times;</span>
+
+<!-- Images in Lightbox -->
+<div class="mySlides4">
+<div class="numbertext">1 / 11</div>
+<img src="img/gallery/TZimg_Training15.jpg" class="modal-img-resp">
+</div>
+
+<!-- Next/previous controls -->
+<a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides4(1)">&#10095;</a>
+
+<!-- Caption text -->
+<div class="caption-container">
+<p id="caption4"></p>
+</div> <!-- End Caption -->
+
+</div> <!-- End Modal content -->
+</div> <!-- End Lightbox -->
+</div> <!-- End Tab 4 -->
