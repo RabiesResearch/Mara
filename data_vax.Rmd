@@ -26,14 +26,14 @@ title: ""
 
 ### Data  
   
-<h5 class="text-primary"><em>Plot coming soon</em></h5>
+<h5 class="text-primary"><em>This plot is in development and currently uses randomly generated data.</em></h5>
 <br>
   
 ```{r, echo=FALSE, warning=FALSE}
-# start_date <- "2014-12-31"
-# end_date <- Sys.Date()
-# dog_vac_barplot(dataframe=dog_vacc_data_subset, type="subset", start_date=start_date,
-#                 end_date=end_date)
+start_date <- "2018-01-01"
+end_date <- Sys.Date()
+dog_vac_barplot_region(dataframe=mara_dog_vacc_subset, start_date=start_date,
+                       end_date=end_date)
 ```
 
 <br>
@@ -42,7 +42,7 @@ title: ""
 
 ### Village-level Vaccination Coverage  
   
-<h5 class="text-primary"><em>Plot coming soon</em></h5>
+<h5 class="text-primary"><em>This map is in development and currently uses randomly generated data.</em></h5>
 <br> 
 
 The map details villages that were vaccinated (1 or more times) in Serengeti District from 2014-2018; where villages were visited multiple times in the same year, the date and Kitongoji (sub-village) are given. Select from the dropdown menu to view a specific year:  
