@@ -21,6 +21,9 @@ navbar:
     - text: "Results"
       icon: fa-bar-chart
       menu:
+        - text: "Results Overview"
+          href: data_overview.html
+        - text: "--------"
         - text: "Dog Vaccination"
           href: data_vax.html
         - text: "Rabies Incidence"
