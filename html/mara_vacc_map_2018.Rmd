@@ -1,0 +1,8 @@
+---
+output: html_document
+---
+<p>
+``` {r echo=FALSE, warning=FALSE, message=FALSE, out.width='100%'}
+dog_vacc_map_region(dataframe=mara_vacc_data, yr=2018, village_map=all_vills, 
+                    region_map=ser_regions)
+```
