@@ -45,7 +45,7 @@ dog_vac_barplot_region(dataframe=mara_dog_vacc_subset, start_date=start_date,
 <h5 class="text-primary"><em>This map is in development and currently uses randomly generated data.</em></h5>
 <br> 
 
-The map details villages that were vaccinated (1 or more times) in Mara Region since 2018; where villages were visited multiple times in the same year, the date and Kitongoji (sub-village) are given. Select from the dropdown menu to view a specific year:  
+The map details villages that were vaccinated (1 or more times) in Mara Region since 2018; where villages were visited multiple times in the same year, the date of each visit is given <em class="text-primary">(Kitongoji will also be given with actual data)</em>. Select from the dropdown menu to view a specific year:  
 
 ```{r droplink, echo=FALSE}
 # Create table
