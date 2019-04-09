@@ -24,3 +24,21 @@ title: ""
   
 <!--Begin page content!-->  
 
+<h5 class="text-primary"><em>This plot is in development and currently uses randomly generated data.</em></h5>  
+<br>
+<h5><b>Figure 1.</b>  Comparison of the number of animals vaccinated (dogs & cats) versus the number of suspect human Rabies exposures in individual villages of Mara Region.</h5>
+  
+``` {r echo=FALSE, message=FALSE, warning=FALSE}
+
+# min(mara_general_summary$n_vac); max(mara_general_summary$n_vac)
+ggplot(data=mara_general_summary, aes(x=n_vac, y=n_suspect_exposure)) + 
+  geom_point() + 
+  geom_smooth(method="lm", se=FALSE, color="#D94801") + 
+  scale_x_continuous(limits=c(0,16000), breaks=c(0,4000,8000,12000,16000)) + 
+  scale_y_continuous(limits=c(0,6)) + 
+  labs(x="Number of animals Vaccinated", y="Number of suspect exposures") + 
+  theme_classic()
+
+```
+
+<br><br>
