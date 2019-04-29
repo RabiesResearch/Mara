@@ -24,9 +24,18 @@ title: ""
   
 <!--Begin page content!-->  
 
+<h5><b>Figure 1.</b>  Population density in in villages of Mara region; Serengeti National Park is shown in grey</h5>
+``` {r, echo=FALSE, message=FALSE, warning=FALSE}
+# Subset shapefiles for Only Mara region
+mara_vills <- all_vills[which(all_vills$Region_Nam=="Mara"),]
+mara_dis <- districts[which(districts$Region_Nam=="Mara"),]
+
+plot_pop_dens()
+```
+
+<br><br>
 <h5 class="text-primary"><em>This plot is in development and currently uses randomly generated data.</em></h5>  
-<br>
-<h5><b>Figure 1.</b>  Comparison of the number of animals vaccinated (dogs & cats) versus the number of suspect human Rabies exposures in individual villages of Mara Region.</h5>
+<h5><b>Figure 2.</b>  Comparison of the number of animals vaccinated (dogs & cats) versus the number of suspect human Rabies exposures in individual villages of Mara Region.</h5>
   
 ``` {r echo=FALSE, message=FALSE, warning=FALSE}
 
