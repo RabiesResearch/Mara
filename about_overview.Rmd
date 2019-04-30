@@ -19,10 +19,19 @@ title: ""
 </div>
 </div>
 <hr class="hr-orange">
-
 <br>
   
 <!--Begin page content!-->
 
-<h5 class="text-primary"><em>Project information coming soon</em></h5>
-<br>
+<!--Page section with map image and project info-->
+<div style="display: inline-block;">
+
+<img src="img/ser_map.png" class= "map_image"/>
+
+<div class="map_text">
+
+<h5 class="text-primary"><em>Project information coming soon | Project information coming soon | 
+Project information coming soon | Project information coming soon | Project information coming soon</em></h5>
+
+</div>
+</div>
