@@ -26,7 +26,7 @@ title: ""
 <!--Page section with map image and project info-->
 <div style="display: inline-block;">
 
-<img src="img/ser_map.png" class= "map_image"/>
+<img src="img/mara_map.jpg" class= "map_image"/>
 
 <div class="map_text">
 
