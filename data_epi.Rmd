@@ -40,7 +40,7 @@ y_axis_max <- find_y_max(human_dataframe=IBCM_epi_human, animal_dataframe=IBCM_e
   
 <h5 class="text-primary"><em>This plot is in development.</em></h5><br>
   
-``` {r, echo=FALSE}
+``` {r, echo=FALSE, fig.width=10}
 epi_plot_region(human_dataframe=IBCM_epi_human, animal_dataframe=IBCM_epi_animal, 
          region="Mara", start_date=start_date, start_month=start_month,
          end_date=end_date, max_y=y_axis_max)
